@@ -1,3 +1,3 @@
-# Nitro starter
+# URL Shortener
 
-Look at the [nitro quick start](https://nitro.unjs.io/guide#quick-start) to learn more how to get started.
+A project inspired by [url-shortener built with Hono](https://github.com/yusukebe/url-shortener) from [Yusuke Wada](https://github.com/yusukebe) and built with [Nitro](https://nitro.unjs.io) and deploy on Cloudflare Pages.
