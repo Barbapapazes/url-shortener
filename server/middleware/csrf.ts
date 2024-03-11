@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const method = getMethod(event)
+  const method = event.method
 
   if (method === 'GET') {
     return
