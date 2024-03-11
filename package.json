@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "prepare": "nitro prepare",
+    "preview": "node .output/server/index.mjs",
+    "deploy": "NITRO_PRESET=cloudflare-pages bun run build && wrangler pages deploy dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
+    "eslint": "^8.57.0",
+    "nano-jsx": "^0.1.0",
+    "nitropack": "latest",
+    "ohash": "^1.1.3",
+    "wrangler": "^3.32.0",
+    "zod": "^3.22.4"
+  }
+}
