@@ -1,0 +1,9 @@
+name = "url-shortener"
+compatibility_date = "2023-08-07"
+
+kv_namespaces = [
+  { binding = "url-shortener", id = "95860557d5f84b76aaa8fcb21f925323" }
+]
+
+[build]
+command = "bun run build"

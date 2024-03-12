@@ -1,6 +1,7 @@
 import { Helmet, h, renderSSR } from 'nano-jsx'
+import { withTemplate } from '../resources/template'
 
-export default defineEventHandler(() => {
+export default defineLazyEventHandler(() => {
   const App = () => {
     return (
       <div>
@@ -18,8 +19,12 @@ export default defineEventHandler(() => {
   const app = renderSSR(<App />)
   const { body, head } = Helmet.SSR(app)
 
-  return withTemplate({
+  const page = withTemplate({
     body,
     head,
+  })
+
+  return defineEventHandler(() => {
+    return page
   })
 })

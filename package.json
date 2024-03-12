@@ -6,7 +6,6 @@
     "dev": "nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
-    "deploy": "NITRO_PRESET=cloudflare-pages bun run build && wrangler pages deploy dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

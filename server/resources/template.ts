@@ -17,7 +17,7 @@ export function withTemplate(props: LayoutProps) {
       <body>
         <header class="container">
           <h1>
-            <a href="/">URL Shortener</a>
+            <a href="/">URL Shortener with Nitro</a>
           </h1>
         </header>
         <main class="container">
