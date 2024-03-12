@@ -1,6 +1,5 @@
 export default defineNitroConfig({
   srcDir: 'server',
-  $production: {
-    storage: { data: { driver: 'cloudflare-kv-binding', binding: 'url-shortener' } },
-  },
+  storage: { data: { driver: 'cloudflare-kv-binding', binding: 'url-shortener' } },
+  devStorage: { data: { driver: 'fs', base: './data/kv' } },
 })
