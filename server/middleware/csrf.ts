@@ -1,13 +1,11 @@
 export default defineEventHandler(async (event) => {
   const method = event.method
 
-  if (method === 'GET') {
+  if (method === 'GET')
     return
-  }
 
   const requestURL = getRequestURL(event).origin
   const origin = getRequestHeader(event, 'origin')
-
 
   if (!origin) {
     throw createError({
