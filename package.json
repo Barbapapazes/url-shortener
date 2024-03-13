@@ -6,7 +6,6 @@
     "dev": "nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
-    "deploy": "NITRO_PRESET=cloudflare-pages bun run build && wrangler pages deploy dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -16,7 +15,6 @@
     "nano-jsx": "^0.1.0",
     "nitropack": "2.9.3",
     "ohash": "^1.1.3",
-    "wrangler": "^3.32.0",
     "zod": "^3.22.4"
   }
 }
