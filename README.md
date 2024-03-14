@@ -4,7 +4,7 @@
 
 A simple URL shortener service built with [Nitro](https://nitro.unjs.io) and deployed on Cloudflare Pages.
 
-Read more on [UnJS website]().
+Read more on [UnJS website](https://unjs.io/learn/articles/url-shortener-with-nitro-on-cloudflare-pages).
 
 ## Features
 
