@@ -19,13 +19,13 @@ jobs:
       - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
         with:
           node-version: 20.5
-          cache: pnpm
+      - uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Lint files
-        run: pnpm run lint
+        run: bun run lint
 
   build:
     name: Build
@@ -37,10 +37,10 @@ jobs:
       - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
         with:
           node-version: 20.5
-          cache: pnpm
+      - uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Generate files
-        run: pnpm run build
+        run: bun run build
