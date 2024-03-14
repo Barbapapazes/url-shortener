@@ -17,12 +17,12 @@ jobs:
       - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
         with:
           node-version: 20.5
-          cache: pnpm
+      - uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Lint & Fix
-        run: pnpm run lint:fix
+        run: bun run lint:fix
 
       - uses: autofix-ci/action@d3e591514b99d0fca6779455ff8338516663f7cc
